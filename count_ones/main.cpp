@@ -34,18 +34,13 @@ void count_ones(unsigned char x)
         unsigned char x_and_ns = x & not_sub;
         unsigned char x_xor_y = x ^ x_and_ns;
 
-        //printf("x: %d", x);
-        //printf("\ny: %d", x_and_ns);
-        //printf("\nx_xor_y: %d", x_xor_y);
-
         x = x_xor_y;
         x = (int)(x);
-        //printf("\nnew x: %d", x);
 
         i++;
     }
 
-    printf("\nones in binary: %d", i - 1);
+    printf("\nNumber of bytes set to one: %d", i - 1);
 
 }
 
@@ -54,7 +49,9 @@ int main()
 {
 
     unsigned char x = 44;
-
+    
+    printf("\nInteger: %d", x)
+    
     decToBinary(x);
     count_ones(x);
 }
