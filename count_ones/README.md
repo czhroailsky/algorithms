@@ -1,5 +1,5 @@
 Algorithm to count the number of bytes set to one in the binary representation of an integer.
 
-Complexity: O(s) 
+Complexity: <img src="https://render.githubusercontent.com/render/math?math=O(s)"> 
 
-Where s is the number of bytes set to 1.
+Where *s* is the number of bytes set to 1.
